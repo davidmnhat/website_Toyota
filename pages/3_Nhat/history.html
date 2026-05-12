@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toyota History</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow: hidden;
+      opacity: 1;
+      transition: opacity 0.8s ease-in-out;
+    }
+
+    .fade-out { opacity: 0; }
+
+    .home-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #e00;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 999;
+      transition: background 0.3s;
+    }
+
+    .home-button:hover { background: #ff4444; }
+
+    /* Full-screen centering container */
+    .scene {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* The orbit circle — purely CSS-positioned milestones */
+    .orbit {
+      position: relative;
+      width: 80vmin;
+      height: 80vmin;
+      border-radius: 50%;
+      border: 2px dashed #666;
+      flex-shrink: 0;
+    }
+
+    /* Center text sits inside the circle */
+    .center-content {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20%;
+      text-align: center;
+    }
+
+    .center-content h1 { font-size: clamp(1rem, 3vmin, 2rem); margin-bottom: 0.75rem; }
+    .center-content p  { font-size: clamp(0.75rem, 1.8vmin, 1rem); line-height: 1.5; margin: 0; }
+
+    /* Each milestone anchor is placed with CSS custom props set by JS */
+    .milestone {
+      position: absolute;
+      /* CSS variable-based placement — no getBoundingClientRect race */
+      left: calc(50% + var(--mx) * 50%);
+      top:  calc(50% + var(--my) * 50%);
+      transform: translate(-50%, -50%);
+    }
+
+    .milestone a {
+      color: #fff;
+      text-decoration: none;
+      background: #e00;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-weight: bold;
+      white-space: nowrap;
+      transition: background 0.3s;
+      display: inline-block;
+    }
+
+    .milestone a:hover { background: #ff4444; }
+  </style>
+</head>
+<body>
+
+  <a href="/index.html" class="home-button" id="homeBtn">← Home</a>
+
+  <div class="scene">
+    <div class="orbit" id="orbit">
+      <div class="center-content">
+        <h1>THE ORIGINS OF TOYOTA</h1>
+        <p>Discover the milestones that shaped Toyota into a global icon. From its founding in 1937 to innovations in the 21st century.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const years = ['1937', '1957', '1989', '1997', '2020'];
+
+const orbit = document.getElementById('orbit');
+const total = years.length;
+
+years.forEach((year, i) => {
+  // Tính góc
+  const angle = (2 * Math.PI / total) * i - Math.PI / 2;
+
+  const div = document.createElement('div');
+  div.className = 'milestone';
+  div.style.setProperty('--mx', Math.cos(angle).toFixed(6));
+  div.style.setProperty('--my', Math.sin(angle).toFixed(6));
+
+  const a = document.createElement('a');
+  // Tự động nối năm với .html
+  const link = `${year}.html`; 
+  
+  a.href = link;
+  a.textContent = year;
+  
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    document.body.classList.add('fade-out');
+    setTimeout(() => { window.location.href = link; }, 800);
+  });
+
+  div.appendChild(a);
+  orbit.appendChild(div);
+});
+
+// Fade on home button
+document.getElementById('homeBtn').addEventListener('click', e => {
+  e.preventDefault();
+  document.body.classList.add('fade-out');
+  setTimeout(() => { window.location.href = e.currentTarget.href; }, 800);
+});
+  </script>
+</body>
+</html>

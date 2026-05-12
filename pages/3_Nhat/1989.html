@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1989 - Lexus Debut</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      text-align: center;
+      opacity: 1;
+      transition: opacity 0.8s ease-in-out; /* DÒNG TẠO HIỆU ỨNG MỜ DẦN */
+    }
+    .fade-out {
+      opacity: 0; /* DÒNG KHI KÍCH HOẠT CLASS fade-out */
+    }
+    img {
+      width: 50%;
+      height: auto;
+      margin: 2rem 0;
+      border-radius: 12px;
+    }
+    a {
+      color: #e00;
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: underline;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>1989 - Lexus Brand is Born</h1>
+  <img src="img/1989.jpg" alt="Lexus LS400">
+  <p>Toyota launched its luxury division, Lexus, in 1989. The first model, the Lexus LS400, challenged European luxury cars with its engineering quality and comfort, becoming a major success in the U.S.</p>
+  <a href="history.html" onclick="fadeOutAndRedirect(event, 'history.html')">← Back to Timeline</a>
+
+  <script>
+    function fadeOutAndRedirect(e, url) {
+      e.preventDefault();
+      document.body.classList.add('fade-out'); // DÒNG KÍCH HOẠT fade-out
+      setTimeout(() => {
+        window.location.href = url;
+      }, 800);
+    }
+  </script>
+</body>
+</html>

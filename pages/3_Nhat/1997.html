@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1997 - Toyota Prius Launch</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      text-align: center;
+      opacity: 1;
+      transition: opacity 0.8s ease-in-out;
+    }
+    .fade-out {
+      opacity: 0;
+    }
+    img {
+      max-width: 50%;
+      height: auto;
+      margin: 2rem 0;
+      border-radius: 12px;
+    }
+    a {
+      color: #e00;
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: underline;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>1997 - Launch of the Toyota Prius</h1>
+  <img src="img/1997.jpg" alt="Toyota Prius First Gen">
+  <p>In 1997, Toyota launched the Prius, the world's first mass-produced hybrid vehicle. It marked a turning point in automotive technology and environmental awareness.</p>
+  <a href="history.html" onclick="fadeOutAndRedirect(event, 'history.html')">← Back to Timeline</a>
+
+  <script>
+    function fadeOutAndRedirect(e, url) {
+      e.preventDefault();
+      document.body.classList.add('fade-out');
+      setTimeout(() => {
+        window.location.href = url;
+      }, 800);
+    }
+  </script>
+</body>
+</html>

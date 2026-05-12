@@ -1,0 +1,171 @@
+/* ================================================
+   main.css  —  login / register / forgot pages
+   ================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* ---------- Layout ---------- */
+.site-content .container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+/* ---------- Form wrapper ---------- */
+form {
+  display: block;
+  text-align: left;
+  margin-top: 30px;
+  width: 100%;
+}
+
+form h2 {
+  margin: 20px 0;
+  font-size: 32px;
+  text-align: center;
+}
+
+/* ---------- Labels ---------- */
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ---------- Inputs ---------- */
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="tel"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 0 0 14px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 14px;
+  display: block;
+}
+
+/* ---------- Register / input rows on register page ---------- */
+.link-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin: 4px 0 24px;
+}
+
+.link-row a {
+  text-decoration: none;
+  color: #0057b8;
+}
+
+.link-row a:hover { text-decoration: underline; }
+
+/* ---------- Login button ---------- */
+.login-btn {
+  background-color: #4cff88;
+  border: none;
+  color: #000;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-btn:hover { background-color: #3ae279; }
+
+/* ---------- Search button (forgot password) ---------- */
+.search-button {
+  background-color: #66ff66;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto 0;
+  transition: background 0.2s;
+}
+
+.search-button:hover { background-color: #55dd55; }
+
+/* ---------- OR divider ---------- */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 28px 0 8px;
+  color: #888;
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+/* ---------- SSO section ---------- */
+.sso-text {
+  font-size: 14px;
+  margin: 12px 0 4px;
+  color: #333;
+  text-align: center;
+}
+
+.sso-button {
+  width: 100%;
+  padding: 10px 16px;
+  margin: 10px 0 0;
+  border: 1px solid #999;
+  border-radius: 30px;
+  font-size: 15px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.sso-button:hover {
+  background-color: #f4f4f4;
+  transform: scale(1.01);
+}
+
+.sso-button i { font-size: 20px; }
+
+/* ---------- Register button ---------- */
+.register-button {
+  background-color: #66ff66;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  transition: background 0.2s;
+}
+
+.register-button:hover { background-color: #55dd55; }
+
+/* ---------- Login link (below register form) ---------- */
+.login-link {
+  font-size: 15px;
+  margin: 8px 0 16px;
+  text-align: left;
+}
+
+.login-link a {
+  color: #0057b8;
+  text-decoration: none;
+}
+
+.login-link a:hover { text-decoration: underline; }

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toyota Header & Footer Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="main-page">
+      <div id="header">
+        <header class="site-header">
+          <div class="container header-container">
+            <div class="header-left">
+              <div class="logo">
+                <a href="./index.html" title="Toyota Home">
+                  <svg viewBox="0 0 400 270" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M375.32 171.13c-1.8-19.26-7.85-37.12-17.5-52.69-13.4-21.6-33.3-38.35-57.53-48.24-25.08-10.2-52.73-12.75-79.62-7.59-26.13 5.02-50.15 17.4-69.2 35.61-19.1 18.2-32.9 41.7-39.6 68.39-4.32 16.9-5.18 34.3-2.6 51.26 2.06 13.5 6.6 26.5 13.3 38.4C69.6 270.8 88.3 283.6 109.8 290c10.4 3.1 21.1 4.7 31.9 4.7 13.1 0 26.1-2.1 38.5-6.2 24.2-7.9 45.6-22.3 61.6-41.6 17-20.5 27.5-45.6 29.8-72.6H200.7v-28.7h174.62zM200.7 101.4c-28.1 0-53.7 11.2-72.3 29.3-18.5 18-29.6 42.4-29.6 69.3h101.9v-98.6z"
+                    ></path>
+                    <path
+                      d="M145.43 0C65.1 0 0 65.1 0 145.43s65.1 145.43 145.43 145.43 145.43-65.1 145.43-145.43S225.75 0 145.43 0zm0 258.9c-62.6 0-113.47-50.87-113.47-113.47S82.83 32 145.43 32s113.47 50.87 113.47 113.47-50.87 113.43-113.47 113.43z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="main-nav-wrapper">
+                <nav class="main-nav">
+                  <ul>
+                    <li class="has-dropdown">
+                      <a href="./pages/1_TienThinh/All_Vehicles.html"
+                        >Vehicles</a
+                      >
+                      <div class="dropdown-menu">
+                        <a href="./pages/1_TienThinh/All_Vehicles.html"
+                          >All Vehicles</a
+                        >
+                        <a href="./pages/1_TienThinh/All_Vehicles.html">SUVs</a>
+                        <a href="./pages/1_TienThinh/All_Vehicles.html"
+                          >Trucks</a
+                        >
+                        <a href="./pages/1_TienThinh/All_Vehicles.html">Cars</a>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="./pages/4_SiDan/Parts&Accessries.html"
+                        >Parts & Accessries</a
+                      >
+                    </li>
+                    <li><a href="./pages/3_Nhat/login.html">Owners</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="header-right">
+              <div class="header-utils">
+                <a href="./pages/3_Nhat/find.html">
+                  <span>Find a Dealer</span>
+                </a>
+                <a href="#">English</a>
+                <a href="./pages/2_BaoPham/page1.html" class="btn-cta"
+                  >Build & Price</a
+                >
+                <button type="button" aria-label="Search">
+                  <i class="fa-solid fa-user icon_user"></i>
+                </button>
+              </div>
+              <button class="mobile-menu-toggle" aria-label="Open menu">
+                <span class="bar"></span><span class="bar"></span
+                ><span class="bar"></span>
+              </button>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <main class="site-content">
+        <div class="container">
+          <!-- slide main -->
+          <section class="hero-section">
+            <!-- Các ảnh nhỏ bên hông -->
+            <div class="hero-thumbnails">
+              <div class="thumbnail thumbnail-left">
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+              <div class="thumbnail thumbnail-right">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+
+            <!-- Nội dung chữ chính giữa -->
+            <div class="hero-content">
+              <h2 class="hero-title">2026 RAV4</h2>
+              <p class="hero-subtitle">Adventure in every charge.</p>
+            </div>
+
+            <!-- Các dấu chấm slider -->
+            <div class="hero-slider-nav">
+              <span class="dot"></span>
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </section>
+
+          <!-- explore all -->
+          <section class="explore-vehicles">
+            <h2 class="section-title">Explore All Vehicles</h2>
+            <nav class="vehicle-categories">
+              <ul>
+                <li><a href="#" class="active">Cars & Minivan</a></li>
+                <li><a href="#">Trucks</a></li>
+                <li><a href="#">Crossovers & SUVs</a></li>
+                <li><a href="#">Camry</a></li>
+                <li><a href="#">Corolla</a></li>
+                <li><a href="#">Electrified</a></li>
+              </ul>
+            </nav>
+          </section>
+          <section class="product-list">
+            <div class="product-group product-slide active">
+              <div class="product-slider">
+                <div class="product-card">
+                  <img
+                    src="./assets/images/car_slide_1.png"
+                    alt="Toyota Crown Signia"
+                  />
+                  <div class="product-info brown">
+                    <span class="product-year">2025</span>
+                    <h3 class="product-name">4Runner</h3>
+                    <p class="product-desc">
+                      Experience the height of sophistication.
+                    </p>
+                    <div class="product-price">
+                      <span>$41,210</span>
+                      <span>20/26 MPG</span>
+                    </div>
+                    <div class="product-buttons">
+                      <a
+                        href="./pages/1_TienThinh/All_Vehicles.html"
+                        class="btn btn-link"
+                        >Explore</a
+                      >
+                      <a
+                        href="./pages/1_TienThinh/Vehicle Detail.html"
+                        class="btn btn-link secondary"
+                        >Build <i class="fa-solid fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-slider">
+                <div class="product-card">
+                  <img
+                    src="./assets/images/car_slide_2.png"
+                    alt="Toyota Crown Signia"
+                  />
+                  <div class="product-info green">
+                    <span class="product-year">2025</span>
+                    <h3 class="product-name">bZ4X</h3>
+                    <p class="product-desc">
+                      Experience the height of sophistication.
+                    </p>
+                    <div class="product-price">
+                      <span>$37,090</span>
+                      <span>252 miles</span>
+                    </div>
+                    <div class="product-buttons">
+                      <a
+                        href="./pages/1_TienThinh/All_Vehicles.html"
+                        class="btn btn-link"
+                        >Explore</a
+                      >
+                      <a
+                        href="./pages/1_TienThinh/Vehicle Detail.html"
+                        class="btn btn-link secondary"
+                      >
+                        Build <i class="fa-solid fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-slider">
+                <div class="product-card">
+                  <img
+                    src="./assets/images/car_slide_3.png"
+                    alt="Toyota Crown Signia"
+                  />
+                  <div class="product-info dark-brown">
+                    <span class="product-year">2025</span>
+                    <h3 class="product-name">Toyota Crown Signia</h3>
+                    <p class="product-desc">
+                      Experience the height of sophistication.
+                    </p>
+                    <div class="product-price">
+                      <span>$44,090</span>
+                      <span>39/37 MPG</span>
+                    </div>
+                    <div class="product-buttons">
+                      <a
+                        href="./pages/1_TienThinh/All_Vehicles.html"
+                        class="btn btn-link"
+                        >Explore</a
+                      >
+                      <a
+                        href="./pages/1_TienThinh/Vehicle Detail.html"
+                        class="btn btn-link secondary"
+                      >
+                        Build <i class="fa-solid fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-slider">
+                <div class="product-card">
+                  <img
+                    src="./assets/images/car_slide_4.png"
+                    alt="Toyota Crown Signia"
+                  />
+                  <div class="product-info gray">
+                    <span class="product-year">2025</span>
+                    <h3 class="product-name">Land Cruiser</h3>
+                    <p class="product-desc">Adventure Starts Here.</p>
+                    <div class="product-price">
+                      <span>$56,700</span>
+                      <span>22/25 MPG</span>
+                    </div>
+                    <div class="product-buttons">
+                      <a
+                        href="./pages/1_TienThinh/All_Vehicles.html"
+                        class="btn btn-link"
+                        >Explore</a
+                      >
+                      <a
+                        href="./pages/1_TienThinh/Vehicle Detail.html"
+                        class="btn btn-link secondary"
+                      >
+                        Build <i class="fa-solid fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-group product-slide">
+              <div class="product-slider">
+                <div class="product-card">
+                  <img
+                    src="./assets/images/car_slide_5.png"
+                    alt="Toyota Crown Signia"
+                  />
+                  <div class="product-info brown">
+                    <span class="product-year">2025</span>
+                    <h3 class="product-name">Grand Highlander Hybrid</h3>
+                    <p class="product-desc">Maximize adventure in style</p>
+                    <div class="product-price">
+                      <span>$44,210</span>
+                      <span>37/34 MPG</span>
+                    </div>
+                    <div class="product-buttons">
+                      <a
+                        href="./pages/1_TienThinh/All_Vehicles.html"
+                        class="btn btn-link"
+                        >Explore</a
+                      >
+                      <a
+                        href="./pages/1_TienThinh/Vehicle Detail.html"
+                        class="btn btn-link secondary"
+                      >
+                        Build <i class="fa-solid fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-slider">
+                <div class="product-card">
+                  <img
+                    src="./assets/images/car_slide_6.png"
+                    alt="Grand Highlander"
+                  />
+                  <div class="product-info green">
+                    <span class="product-year">2025</span>
+                    <h3 class="product-name">Grand Highlander</h3>
+                    <p class="product-desc">
+                      Ready for whatever life throws your way.
+                    </p>
+                    <div class="product-price">
+                      <span>$40,860</span>
+                      <span>21/28 MPG</span>
+                    </div>
+                    <div class="product-buttons">
+                      <a
+                        href="./pages/1_TienThinh/All_Vehicles.html"
+                        class="btn btn-link"
+                        >Explore</a
+                      >
+                      <a
+                        href="./pages/1_TienThinh/Vehicle Detail.html"
+                        class="btn btn-link secondary"
+                      >
+                        Build <i class="fa-solid fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-slider">
+                <div class="product-card">
+                  <img
+                    src="./assets/images/car_slide_7.png"
+                    alt="Toyota Crown Signia"
+                  />
+                  <div class="product-info dark-brown">
+                    <span class="product-year">2025</span>
+                    <h3 class="product-name">RAV4 Hybrid</h3>
+                    <p class="product-desc">Maximize adventure in style</p>
+                    <div class="product-price">
+                      <span>$32,600</span>
+                      <span>41/38 MPG</span>
+                    </div>
+                    <div class="product-buttons">
+                      <a
+                        href="./pages/1_TienThinh/All_Vehicles.html"
+                        class="btn btn-link"
+                        >Explore</a
+                      >
+                      <a
+                        href="./pages/1_TienThinh/Vehicle Detail.html"
+                        class="btn btn-link secondary"
+                      >
+                        Build <i class="fa-solid fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-slider">
+                <div class="product-card">
+                  <img
+                    src="./assets/images/car_slide_8.png"
+                    alt="Toyota Crown Signia"
+                  />
+                  <div class="product-info gray">
+                    <span class="product-year">2025</span>
+                    <h3 class="product-name">Land Cruiser</h3>
+                    <p class="product-desc">Adventure Starts Here.</p>
+                    <div class="product-price">
+                      <span>$56,700</span>
+                      <span>22/25 MPG</span>
+                    </div>
+                    <div class="product-buttons">
+                      <a
+                        href="./pages/1_TienThinh/All_Vehicles.html"
+                        class="btn btn-link"
+                        >Explore</a
+                      >
+                      <a
+                        href="./pages/1_TienThinh/Vehicle Detail.html"
+                        class="btn btn-link secondary"
+                      >
+                        Build <i class="fa-solid fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="pagination-container">
+            <button class="page-btn prev">&lt;</button>
+            <span class="page-info"
+              ><span id="current-page">1</span> of
+              <span id="total-pages">2</span></span
+            >
+            <button class="page-btn next">&gt;</button>
+          </div>
+
+          <div class="link-vehicles">
+            <a
+              href="./pages/1_TienThinh/All_Vehicles.html"
+              class="link-allVehicles"
+            >
+              <span>Explore All Vehicles</span>
+              <!-- <span class="sign"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></span> -->
+            </a>
+            <a href="./pages/2_BaoPham/page3.html" class="link-searchInventory">
+              <span>Search Inventory </span>
+              <span class="sign"
+                ><i class="fa-solid fa-chevron-right"></i>
+              </span>
+            </a>
+          </div>
+          <!-- shopping tool -->
+          <section class="shopping-tools">
+            <h2 class="section-title">Shopping Tools</h2>
+            <div class="tools-container">
+              <a href="./pages/2_BaoPham/page1.html" class="tool-box-link">
+                <div class="tool-box">
+                  <img
+                    src="https://img.icons8.com/ios-filled/50/gear.png"
+                    alt="Build & Price"
+                  />
+                  <p>Build & Price</p>
+                </div>
+              </a>
+
+              <a href="./pages/2_BaoPham/page3.html" class="tool-box-link">
+                <div class="tool-box">
+                  <img
+                    src="https://img.icons8.com/ios-filled/50/search--v1.png"
+                    alt="Search Inventory"
+                  />
+                  <p>Search Inventory</p>
+                </div>
+              </a>
+
+              <a
+                href="./pages/4_SiDan/SpecialOffers.html"
+                class="tool-box-link"
+              >
+                <div class="tool-box">
+                  <img
+                    src="https://img.icons8.com/ios-filled/50/money.png"
+                    alt="Special Offers"
+                  />
+                  <p>Special Offers</p>
+                </div>
+              </a>
+
+              <a href="./pages/3_Nhat/find.html" class="tool-box-link">
+                <div class="tool-box">
+                  <img
+                    src="https://img.icons8.com/ios-filled/50/marker.png"
+                    alt="Find a Dealer"
+                  />
+                  <p>Find a Dealer</p>
+                </div>
+              </a>
+            </div>
+          </section>
+          <div class="poster">
+            <img src="./assets/images/poster.png" alt="" class="poster-img" />
+            <div class="poster-content">
+              <h2 class="poster-title">BEYOND ZERO</h2>
+              <p class="poster-desc">
+                ToyotaCare is a no cost maintenance plan with 24-hour roadside
+                assistance.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- news -->
+        <section class="bz-banner">
+          <div class="bz-text">
+            <p>
+              See bZ join forces with Superman.<br />Only in theaters July 11.
+            </p>
+          </div>
+          <img
+            src="./assets/images/CAR.png"
+            alt="Toyota bZ and Superman"
+            class="bz-image"
+          />
+        </section>
+
+        <section class="discover-toyota">
+          <h2 class="section-title">Discover Toyota</h2>
+          <div class="discover-box">
+            <div class="discover-content">
+              <div class="discover-img">
+                <img
+                  src="./assets/images/tho2.png"
+                  alt="Toyota Service"
+                  class="service-img"
+                />
+              </div>
+              <div class="service-content">
+                <span class="featured">FEATURED STORIES</span>
+                <h3>Schedule Toyota Service</h3>
+                <p>
+                  Sign-in and schedule a service appointment online at one of
+                  our dealers.
+                </p>
+                <a href="./pages/4_SiDan/Newsroom.html" class="learn-btn"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div id="footer">
+        <footer class="site-footer">
+          <div class="container">
+            <div class="footer-grid">
+              <div class="footer-column">
+                <h4>Shopping Tools <span class="arrow"></span></h4>
+                <ul class="footer-links">
+                  <li>
+                    <a href="/pages/2_BaoPham/page1.html">Build & Price</a>
+                  </li>
+                  <li>
+                    <a href="/pages/2_BaoPham/page3.html">Search Inventory</a>
+                  </li>
+                  <li><a href="/pages/3_Nhat/find.html">Find a Dealer</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4>Vehicles <span class="arrow"></span></h4>
+                <ul class="footer-links">
+                  <li>
+                    <a href="/pages/1_TienThinh/All_Vehicles.html"
+                      >All Toyota Vehicles</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/pages/1_TienThinh/All_Vehicles.html">SUVs</a>
+                  </li>
+                  <li>
+                    <a href="/pages/1_TienThinh/All_Vehicles.html">Trucks</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4>Helpful Links <span class="arrow"></span></h4>
+                <ul class="footer-links">
+                  <li><a href="#">tmt</a></li>
+                  <li><a href="#">tmt</a></li>
+                  <li><a href="#">tmt</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4>About Toyota <span class="arrow"></span></h4>
+                <ul class="footer-links">
+                  <li><a href="/pages/3_Nhat/history.html">History</a></li>
+                  <li><a href="/pages/3_Nhat/contact.html">Contact</a></li>
+                  <li><a href="/pages/4_SiDan/Newsroom.html">Newsroom</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-meta">
+              <div class="social-links">
+                <a href="#" aria-label="Facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" aria-label="YouTube"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+              <nav class="footer-legal-nav">
+                <ul>
+                  <li><a href="/pages/3_Nhat/contact.html">Contact Us</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Accessibility</a></li>
+                  <li><a href="#">Legal Terms</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="footer-copyright">
+              <p>
+                © 2024 Toyota Motor Sales, U.S.A., Inc. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </body>
+</html>

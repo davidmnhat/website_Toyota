@@ -1,0 +1,122 @@
+/* ================================================
+   find.css  —  Find a Dealer / Map page
+   ================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Make body/html fill the viewport so the map can fill its container */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* The main content area holds both the map and the overlays */
+.site-content {
+  position: relative;   /* anchor for absolute children */
+}
+
+.site-content .container {
+  position: relative;
+  padding: 0;
+}
+
+/* ---------- Map ---------- */
+#map {
+  width: 100%;
+  height: 480px;        /* single definition — removed the conflicting 100% rule */
+  margin-top: 0;
+}
+
+/* ---------- City buttons overlay ---------- */
+.buttons {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+.buttons button {
+  display: block;
+  margin-bottom: 6px;
+  padding: 8px 12px;
+  width: 150px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: #e00;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.buttons button:last-child { margin-bottom: 0; }
+.buttons button:hover      { background: #c00; }
+
+/* ---------- Info box overlay ---------- */
+.info-box {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 300px;
+  background: #fff;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: none;
+}
+
+.info-box h3   { margin-top: 0; font-size: 18px; }
+.info-box p    { margin: 6px 0; font-size: 14px; }
+
+.info-box .red-link {
+  color: #e00;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.info-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.info-actions button {
+  flex: 1;
+  padding: 9px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  transition: opacity 0.2s;
+}
+
+.info-actions button:hover { opacity: 0.85; }
+
+.dealer-btn {
+  background-color: #e00;
+  color: #fff;
+}
+
+.quote-btn {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc !important;
+}
+
+.info-box .more {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #e00;
+  cursor: pointer;
+}
+
+.info-box .more:hover { text-decoration: underline; }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2020 - Electrification Strategy</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      text-align: center;
+      opacity: 1;
+      transition: opacity 0.8s ease-in-out;
+    }
+    .fade-out {
+      opacity: 0;
+    }
+    img {
+      max-width: 50%;
+      height: auto;
+      margin: 2rem 0;
+      border-radius: 12px;
+    }
+    a {
+      color: #e00;
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: underline;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>2020 - Toyota’s Electrified Future</h1>
+  <img src="img/2020.jpg" alt="Toyota EV Concept">
+  <p>By 2020, Toyota had committed to an electrified future, unveiling new electric and hybrid models and setting a goal to electrify most of its lineup by 2030.</p>
+  <a href="history.html" onclick="fadeOutAndRedirect(event, 'history.html')">← Back to Timeline</a>
+
+  <script>
+    function fadeOutAndRedirect(e, url) {
+      e.preventDefault();
+      document.body.classList.add('fade-out');
+      setTimeout(() => {
+        window.location.href = url;
+      }, 800);
+    }
+  </script>
+</body>
+</html>

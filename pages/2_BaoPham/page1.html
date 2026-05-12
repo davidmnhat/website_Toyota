@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build car</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <header class="site-header">
+        <div class="container header-container">
+          <div class="header-left">
+            <div class="logo">
+              <a href="/index.html" title="Toyota Home">
+                <svg viewBox="0 0 400 270" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M375.32 171.13c-1.8-19.26-7.85-37.12-17.5-52.69-13.4-21.6-33.3-38.35-57.53-48.24-25.08-10.2-52.73-12.75-79.62-7.59-26.13 5.02-50.15 17.4-69.2 35.61-19.1 18.2-32.9 41.7-39.6 68.39-4.32 16.9-5.18 34.3-2.6 51.26 2.06 13.5 6.6 26.5 13.3 38.4C69.6 270.8 88.3 283.6 109.8 290c10.4 3.1 21.1 4.7 31.9 4.7 13.1 0 26.1-2.1 38.5-6.2 24.2-7.9 45.6-22.3 61.6-41.6 17-20.5 27.5-45.6 29.8-72.6H200.7v-28.7h174.62zM200.7 101.4c-28.1 0-53.7 11.2-72.3 29.3-18.5 18-29.6 42.4-29.6 69.3h101.9v-98.6z"
+                  ></path>
+                  <path
+                    d="M145.43 0C65.1 0 0 65.1 0 145.43s65.1 145.43 145.43 145.43 145.43-65.1 145.43-145.43S225.75 0 145.43 0zm0 258.9c-62.6 0-113.47-50.87-113.47-113.47S82.83 32 145.43 32s113.47 50.87 113.47 113.47-50.87 113.43-113.47 113.43z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="main-nav-wrapper">
+              <nav class="main-nav">
+                <ul>
+                  <li class="has-dropdown">
+                    <a href="/pages/1_TienThinh/All_Vehicles.html">Vehicles</a>
+                    <div class="dropdown-menu">
+                      <a href="/pages/1_TienThinh/All_Vehicles.html"
+                        >All Vehicles</a
+                      >
+                      <a href="/pages/1_TienThinh/All_Vehicles.html">SUVs</a>
+                      <a href="/pages/1_TienThinh/All_Vehicles.html">Trucks</a>
+                      <a href="/pages/1_TienThinh/All_Vehicles.html">Cars</a>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="/pages/4_SiDan/Parts&Accessries.html"
+                      >Parts & Accessries</a
+                    >
+                  </li>
+                  <li><a href="/pages/3_Nhat/login.html">Owners</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="header-right">
+            <div class="header-utils">
+              <a href="/pages/3_Nhat/find.html">
+                <span>Find a Dealer</span>
+              </a>
+              <a href="#">English</a>
+              <a href="/pages/2_BaoPham/page1.html" class="btn-cta"
+                >Build & Price</a
+              >
+              <button type="button" aria-label="Search">
+                <i class="fa-solid fa-user icon_user"></i>
+              </button>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Open menu">
+              <span class="bar"></span><span class="bar"></span
+              ><span class="bar"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- Nội dung trang ở đây -->
+    <main class="site-content">
+      <div class="container">
+        <div
+          style="
+            width: 100%;
+            height: 2000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+          "
+        >
+          <div
+            style="
+              width: 100%;
+              height: 150px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <h1 style="margin: 0">CHOOSE YOUR CAR</h1>
+            <p style="margin: 0; font-size: 1em">Customize your car your way</p>
+          </div>
+          <h1>SUV</h1>
+          <div
+            style="
+              background: linear-gradient(to bottom, #f0f0f0, #ffffff);
+              padding: 50px 0;
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+              gap: 20px;
+              flex-wrap: wrap;
+              width: 100%;
+            "
+          >
+            <div
+              style="
+                max-width: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 100px;
+                flex-wrap: wrap;
+              "
+            >
+              <div
+                style="
+                  width: 400px;
+                  height: 430px;
+                  background-color: #ffffff;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                  overflow: hidden;
+                  text-align: center;
+                  padding-bottom: 20px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="https://tmnaassetscs.scene7.com/is/image/tmnaassetscs/vcr/live/vehicle/TOY/2025/corollacross/6301/235/dc19fb3bcc7e5d0a0f7efc0a87b9302805fa42e7dbc89edc3ad24d59fc64a0ee.png?wid=750&fmt=webp-alpha&cropN=0.1,0.16,0.78,0.8"
+                  alt="Corolla Cross"
+                  style="
+                    width: 90%;
+                    height: 200px;
+                    object-fit: cover;
+                    display: block;
+                    margin-bottom: 15px;
+                    margin-top: 40px;
+                    margin-left: 35px;
+                  "
+                />
+                <div style="width: 90%; height: 80px; text-align: left">
+                  <h2
+                    style="
+                      font-family: Arial, sans-serif;
+                      font-size: 1.4em;
+                      color: #333;
+                      margin: 0 0 5px 0;
+                      padding: 0 15px;
+                    "
+                  >
+                    Corolla Cross
+                  </h2>
+                  <p
+                    style="
+                      font-family: Arial, sans-serif;
+                      font-size: 0.9em;
+                      color: #666;
+                      margin: 0 0 20px 0;
+                      padding: 0 15px;
+                    "
+                  >
+                    Starting at 25,000
+                  </p>
+                </div>
+
+                <button
+                  onclick="chooseCar('Corolla Cross', 'https://tmnaassetscs.scene7.com/is/image/tmnaassetscs/vcr/live/vehicle/TOY/2025/corollacross/6301/235/dc19fb3bcc7e5d0a0f7efc0a87b9302805fa42e7dbc89edc3ad24d59fc64a0ee.png?wid=750&fmt=webp-alpha&cropN=0.1,0.16,0.78,0.8')"
+                  style="
+                    width: 83%;
+                    background-color: #e60000;
+                    color: #ffffff;
+                    padding: 10px 30px;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    font-family: Arial, sans-serif;
+                    font-size: 1em;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    transition: background-color 0.3s ease;
+                  "
+                  onmouseover="this.style.backgroundColor='#cc0000'"
+                  onmouseout="this.style.backgroundColor='#e60000'"
+                >
+                  CHOOSE
+                </button>
+              </div>
+
+              <div
+                style="
+                  width: 400px;
+                  height: 430px;
+                  background-color: #ffffff;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                  overflow: hidden;
+                  text-align: center;
+                  padding-bottom: 20px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="https://tmnaassetscs.scene7.com/is/image/tmnaassetscs/vcr/live/vehicle/TOY/2025/4runner/8642/489/d020b161981b7b4fe971a687c19bd2421ea43422f99402c0c391a590c2527acf.png?wid=750&fmt=webp-alpha&cropN=0.1,0.16,0.78,0.8"
+                  alt="4Runner"
+                  style="
+                    width: 90%;
+                    height: 200px;
+                    object-fit: cover;
+                    display: block;
+                    margin-bottom: 15px;
+                    margin-top: 40px;
+                    margin-left: 35px;
+                  "
+                />
+                <div style="width: 90%; height: 80px; text-align: left">
+                  <h2
+                    style="
+                      font-family: Arial, sans-serif;
+                      font-size: 1.4em;
+                      color: #333;
+                      margin: 0 0 5px 0;
+                      padding: 0 15px;
+                    "
+                  >
+                    4Runner
+                  </h2>
+                  <p
+                    style="
+                      font-family: Arial, sans-serif;
+                      font-size: 0.9em;
+                      color: #666;
+                      margin: 0 0 20px 0;
+                      padding: 0 15px;
+                    "
+                  >
+                    Starting at 25,000
+                  </p>
+                </div>
+
+                <button
+                  onclick="chooseCar('4Runner', 'https://tmnaassetscs.scene7.com/is/image/tmnaassetscs/vcr/live/vehicle/TOY/2025/4runner/8642/489/d020b161981b7b4fe971a687c19bd2421ea43422f99402c0c391a590c2527acf.png?wid=750&fmt=webp-alpha&cropN=0.1,0.16,0.78,0.8')"
+                  style="
+                    width: 83%;
+                    background-color: #e60000;
+                    color: #ffffff;
+                    padding: 10px 30px;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    font-family: Arial, sans-serif;
+                    font-size: 1em;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    transition: background-color 0.3s ease;
+                  "
+                  onmouseover="this.style.backgroundColor='#cc0000'"
+                  onmouseout="this.style.backgroundColor='#e60000'"
+                >
+                  CHOOSE
+                </button>
+              </div>
+
+              <div
+                style="
+                  width: 400px;
+                  height: 430px;
+                  background-color: #ffffff;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                  overflow: hidden;
+                  text-align: center;
+                  padding-bottom: 20px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="https://tmnaassetscs.scene7.com/is/image/tmnaassetscs/vcr/live/vehicle/TOY/2025/rav4/4430/338/b72a10ca8cdd22e32726c4936a01fb48363cf277d7424a0efcd54f713576b889.png?wid=750&fmt=webp-alpha&cropN=0.1,0.16,0.78,0.8"
+                  alt="RAV4"
+                  style="
+                    width: 90%;
+                    height: 200px;
+                    object-fit: cover;
+                    display: block;
+                    margin-bottom: 15px;
+                    margin-top: 40px;
+                    margin-left: 35px;
+                  "
+                />
+                <div style="width: 90%; height: 80px; text-align: left">
+                  <h2
+                    style="
+                      font-family: Arial, sans-serif;
+                      font-size: 1.4em;
+                      color: #333;
+                      margin: 0 0 5px 0;
+                      padding: 0 15px;
+                    "
+                  >
+                    RAV4
+                  </h2>
+                  <p
+                    style="
+                      font-family: Arial, sans-serif;
+                      font-size: 0.9em;
+                      color: #666;
+                      margin: 0 0 20px 0;
+                      padding: 0 15px;
+                    "
+                  >
+                    Starting at 25,000
+                  </p>
+                </div>
+
+                <button
+                  onclick="chooseCar('RAV4', 'https://tmnaassetscs.scene7.com/is/image/tmnaassetscs/vcr/live/vehicle/TOY/2025/rav4/4430/338/b72a10ca8cdd22e32726c4936a01fb48363cf277d7424a0efcd54f713576b889.png?wid=750&fmt=webp-alpha&cropN=0.1,0.16,0.78,0.8')"
+                  style="
+                    width: 83%;
+                    background-color: #e60000;
+                    color: #ffffff;
+                    padding: 10px 30px;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    font-family: Arial, sans-serif;
+                    font-size: 1em;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    transition: background-color 0.3s ease;
+                  "
+                  onmouseover="this.style.backgroundColor='#cc0000'"
+                  onmouseout="this.style.backgroundColor='#e60000'"
+                >
+                  CHOOSE
+                </button>
+              </div>
+            </div>
+          </div>
+          <h1>Sedans & Compacts</h1>
+          <div
+            style="
+              background: linear-gradient(to bottom, #f0f0f0, #ffffff);
+              padding: 50px 0;
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+              gap: 20px;
+              flex-wrap: wrap;
+              width: 100%;
+            "
+          >
+            <div
+              style="
+                max-width: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 100px;
+                flex-wrap: wrap;
+              "
+            >
+              <div
+                style="
+                  width: 400px;
+                  height: 430px;
+                  background-color: #ffffff;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                  overflow: hidden;
+                  text-align: center;
+                  padding-bottom: 20px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="https://tmnaassetscs.scene7.com/is/image/tmnaassetscs/vcr/live/vehicle/TOY/2025/corolla/1852/120/6d239b88069b06daa3c81f79ad7ee156bb1cf9e5899687cefbf97201ffaaabe0.png?wid=750&fmt=webp-alpha&cropN=0.1,0.16,0.78,0.8"
+                  alt="Corolla Cross"
+                  style="
+                    width: 90%;
+                    height: 200px;
+                    object-fit: cover;
+                    display: block;
+                    margin-bottom: 15px;
+                    margin-top: 40px;
+                    margin-left: 35px;
+                  "
+                />
+                <div style="width: 90%; height: 80px; text-align: left">
+                  <h2
+                    style="
+                      font-family: Arial, sans-serif;
+                      font-size: 1.4em;
+                      color: #333;
+                      margin: 0 0 5px 0;
+                      padding: 0 15px;
+                    "
+                  >
+                    Corolla
+                  </h2>
+                  <p
+                    style="
+                      font-family: Arial, sans-serif;
+                      font-size: 0.9em;
+                      color: #666;
+                      margin: 0 0 20px 0;
+                      padding: 0 15px;
+                    "
+                  >
+                    Starting at 25,000
+                  </p>
+                </div>
+
+                <button
+                  onclick="chooseCar('Corolla', 'https://tmnaassetscs.scene7.com/is/image/tmnaassetscs/vcr/live/vehicle/TOY/2025/corolla/1852/120/6d239b88069b06daa3c81f79ad7ee156bb1cf9e5899687cefbf97201ffaaabe0.png?wid=750&fmt=webp-alpha&cropN=0.1,0.16,0.78,0.8')"
+                  style="
+                    width: 83%;
+                    background-color: #e60000;
+                    color: #ffffff;
+                    padding: 10px 30px;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    font-family: Arial, sans-serif;
+                    font-size: 1em;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    transition: background-color 0.3s ease;
+                  "
+                  onmouseover="this.style.backgroundColor='#cc0000'"
+                  onmouseout="this.style.backgroundColor='#e60000'"
+                >
+                  CHOOSE
+                </button>
+              </div>
+
+              <div
+                style="
+                  width: 400px;
+                  height: 430px;
+                  background-color: #ffffff;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                  overflow: hidden;
+                  text-align: center;
+                  padding-bottom: 20px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="https://tmnaassetscs.scene7.com/is/image/tmnaassetscs/vcr/live/vehicle/TOY/2025/camry/2559/659/e3821b23edfa15158b611d4d7d62a8e07dc36a4b1c1f67f24c023d47049c5077.png?wid=750&fmt=webp-alpha&cropN=0.1,0.16,0.78,0.8"
+                  alt="4Runner"
+                  style="
+                    width: 90%;
+                    height: 200px;
+                    object-fit: cover;
+                    display: block;
+                    margin-bottom: 15px;
+                    margin-top: 40px;
+                    margin-left: 35px;
+                  "
+                />
+                <div style="width: 90%; height: 80px; text-align: left">
+                  <h2
+                    style="
+                      font-family: Arial, sans-serif;
+                      font-size: 1.4em;
+                      color: #333;
+                      margin: 0 0 5px 0;
+                      padding: 0 15px;
+                    "
+                  >
+                    Camry
+                  </h2>
+                  <p
+                    style="
+                      font-family: Arial, sans-serif;
+                      font-size: 0.9em;
+                      color: #666;
+                      margin: 0 0 20px 0;
+                      padding: 0 15px;
+                    "
+                  >
+                    Starting at 25,000
+                  </p>
+                </div>
+
+                <button
+                  onclick="chooseCar('Camry', 'https://tmnaassetscs.scene7.com/is/image/tmnaassetscs/vcr/live/vehicle/TOY/2025/camry/2559/659/e3821b23edfa15158b611d4d7d62a8e07dc36a4b1c1f67f24c023d47049c5077.png?wid=750&fmt=webp-alpha&cropN=0.1,0.16,0.78,0.8')"
+                  style="
+                    width: 83%;
+                    background-color: #e60000;
+                    color: #ffffff;
+                    padding: 10px 30px;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    font-family: Arial, sans-serif;
+                    font-size: 1em;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    transition: background-color 0.3s ease;
+                  "
+                  onmouseover="this.style.backgroundColor='#cc0000'"
+                  onmouseout="this.style.backgroundColor='#e60000'"
+                >
+                  CHOOSE
+                </button>
+              </div>
+
+              <div
+                style="
+                  width: 400px;
+                  height: 430px;
+                  background-color: #ffffff;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                  overflow: hidden;
+                  text-align: center;
+                  padding-bottom: 20px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="https://tmnaassetscs.scene7.com/is/image/tmnaassetscs/vcr/live/vehicle/TOY/2026/toyotacrown/4015/626/fb09f092e670ac19c73b74cd61eb46c311d030eba372dbb2b0d8502adb1ae019.png?wid=750&fmt=webp-alpha&cropN=0.1,0.16,0.78,0.8"
+                  alt="RAV4"
+                  style="
+                    width: 90%;
+                    height: 200px;
+                    object-fit: cover;
+                    display: block;
+                    margin-bottom: 15px;
+                    margin-top: 40px;
+                    margin-left: 35px;
+                  "
+                />
+                <div style="width: 90%; height: 80px; text-align: left">
+                  <h2
+                    style="
+                      font-family: Arial, sans-serif;
+                      font-size: 1.4em;
+                      color: #333;
+                      margin: 0 0 5px 0;
+                      padding: 0 15px;
+                    "
+                  >
+                    Crown
+                  </h2>
+                  <p
+                    style="
+                      font-family: Arial, sans-serif;
+                      font-size: 0.9em;
+                      color: #666;
+                      margin: 0 0 20px 0;
+                      padding: 0 15px;
+                    "
+                  >
+                    Starting at 25,000
+                  </p>
+                </div>
+
+                <button
+                  onclick="chooseCar('Crown', 'https://tmnaassetscs.scene7.com/is/image/tmnaassetscs/vcr/live/vehicle/TOY/2026/toyotacrown/4015/626/fb09f092e670ac19c73b74cd61eb46c311d030eba372dbb2b0d8502adb1ae019.png?wid=750&fmt=webp-alpha&cropN=0.1,0.16,0.78,0.8')"
+                  style="
+                    width: 83%;
+                    background-color: #e60000;
+                    color: #ffffff;
+                    padding: 10px 30px;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    font-family: Arial, sans-serif;
+                    font-size: 1em;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    transition: background-color 0.3s ease;
+                  "
+                  onmouseover="this.style.backgroundColor='#cc0000'"
+                  onmouseout="this.style.backgroundColor='#e60000'"
+                >
+                  CHOOSE
+                </button>
+              </div>
+            </div>
+          </div>
+          <h1>Truck</h1>
+          <div
+            style="
+              background: linear-gradient(to bottom, #f0f0f0, #ffffff);
+              padding: 50px 0;
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+              gap: 20px;
+              flex-wrap: wrap;
+              width: 100%;
+            "
+          >
+            <div
+              style="
+                max-width: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 100px;
+                flex-wrap: wrap;
+              "
+            >
+              <div
+                style="
+                  width: 400px;
+                  height: 430px;
+                  background-color: #ffffff;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                  overflow: hidden;
+                  text-align: center;
+                  padding-bottom: 20px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="https://tmnaassetscs.scene7.com/is/image/tmnaassetscs/vcr/live/vehicle/TOY/2025/tacoma/7162/426/d0c80ce2bea203ce8c7807e72af38d2c5b1838e6478d0307d5340e01b65fbcf9.png?wid=750&fmt=webp-alpha&cropN=0.07,0.16,0,0.8"
+                  alt="Corolla Cross"
+                  style="
+                    width: 90%;
+                    height: 200px;
+                    object-fit: cover;
+                    display: block;
+                    margin-bottom: 15px;
+                    margin-top: 40px;
+                    margin-left: 35px;
+                  "
+                />
+                <div style="width: 90%; height: 80px; text-align: left">
+                  <h2
+                    style="
+                      font-family: Arial, sans-serif;
+                      font-size: 1.4em;
+                      color: #333;
+                      margin: 0 0 5px 0;
+                      padding: 0 15px;
+                    "
+                  >
+                    Tacoma
+                  </h2>
+                  <p
+                    style="
+                      font-family: Arial, sans-serif;
+                      font-size: 0.9em;
+                      color: #666;
+                      margin: 0 0 20px 0;
+                      padding: 0 15px;
+                    "
+                  >
+                    Starting at 25,000
+                  </p>
+                </div>
+
+                <button
+                  onclick="chooseCar('Tacoma', 'https://tmnaassetscs.scene7.com/is/image/tmnaassetscs/vcr/live/vehicle/TOY/2025/tacoma/7162/426/d0c80ce2bea203ce8c7807e72af38d2c5b1838e6478d0307d5340e01b65fbcf9.png?wid=750&fmt=webp-alpha&cropN=0.07,0.16,0,0.8')"
+                  style="
+                    width: 83%;
+                    background-color: #e60000;
+                    color: #ffffff;
+                    padding: 10px 30px;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    font-family: Arial, sans-serif;
+                    font-size: 1em;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    transition: background-color 0.3s ease;
+                  "
+                  onmouseover="this.style.backgroundColor='#cc0000'"
+                  onmouseout="this.style.backgroundColor='#e60000'"
+                >
+                  CHOOSE
+                </button>
+              </div>
+
+              <div
+                style="
+                  width: 400px;
+                  height: 430px;
+                  background-color: #ffffff;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                  overflow: hidden;
+                  text-align: center;
+                  padding-bottom: 20px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="https://tmnaassetscs.scene7.com/is/image/tmnaassetscs/vcr/live/vehicle/TOY/2025/tundra/8242/731/9821e3630da33e50c0a270f42f34fdbcc0269633c2b9830bab4fbbb81da231f5.png?wid=750&fmt=webp-alpha&cropN=0.07,0.16,0,0.8"
+                  alt="4Runner"
+                  style="
+                    width: 90%;
+                    height: 200px;
+                    object-fit: cover;
+                    display: block;
+                    margin-bottom: 15px;
+                    margin-top: 40px;
+                    margin-left: 35px;
+                  "
+                />
+                <div style="width: 90%; height: 80px; text-align: left">
+                  <h2
+                    style="
+                      font-family: Arial, sans-serif;
+                      font-size: 1.4em;
+                      color: #333;
+                      margin: 0 0 5px 0;
+                      padding: 0 15px;
+                    "
+                  >
+                    Tundra
+                  </h2>
+                  <p
+                    style="
+                      font-family: Arial, sans-serif;
+                      font-size: 0.9em;
+                      color: #666;
+                      margin: 0 0 20px 0;
+                      padding: 0 15px;
+                    "
+                  >
+                    Starting at 25,000
+                  </p>
+                </div>
+
+                <button
+                  onclick="chooseCar('Tundra', 'https://tmnaassetscs.scene7.com/is/image/tmnaassetscs/vcr/live/vehicle/TOY/2025/tundra/8242/731/9821e3630da33e50c0a270f42f34fdbcc0269633c2b9830bab4fbbb81da231f5.png?wid=750&fmt=webp-alpha&cropN=0.07,0.16,0,0.8')"
+                  style="
+                    width: 83%;
+                    background-color: #e60000;
+                    color: #ffffff;
+                    padding: 10px 30px;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    font-family: Arial, sans-serif;
+                    font-size: 1em;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    transition: background-color 0.3s ease;
+                  "
+                  onmouseover="this.style.backgroundColor='#cc0000'"
+                  onmouseout="this.style.backgroundColor='#e60000'"
+                >
+                  CHOOSE
+                </button>
+              </div>
+
+              <div
+                style="
+                  width: 400px;
+                  height: 430px;
+                  background-color: #ffffff;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                  overflow: hidden;
+                  text-align: center;
+                  padding-bottom: 20px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="https://tmnaassetscs.scene7.com/is/image/tmnaassetscs/vcr/live/vehicle/TOY/2025/tundrahybrid/8401/434/00a9a37a0497a0701c5155cb78e6e7add03464a853b5a9a92eb6851d63fc9a84.png?wid=750&fmt=webp-alpha&cropN=0.07,0.16,0,0.8"
+                  alt="RAV4"
+                  style="
+                    width: 90%;
+                    height: 200px;
+                    object-fit: cover;
+                    display: block;
+                    margin-bottom: 15px;
+                    margin-top: 40px;
+                    margin-left: 35px;
+                  "
+                />
+                <div style="width: 90%; height: 80px; text-align: left">
+                  <h2
+                    style="
+                      font-family: Arial, sans-serif;
+                      font-size: 1.4em;
+                      color: #333;
+                      margin: 0 0 5px 0;
+                      padding: 0 15px;
+                    "
+                  >
+                    Tundra i-FORCE MAX
+                  </h2>
+                  <p
+                    style="
+                      font-family: Arial, sans-serif;
+                      font-size: 0.9em;
+                      color: #666;
+                      margin: 0 0 20px 0;
+                      padding: 0 15px;
+                    "
+                  >
+                    Starting at 25,000
+                  </p>
+                </div>
+
+                <<button
+                  onclick="chooseCar('Tundra i-FORCE MAX', 'https://tmnaassetscs.scene7.com/is/image/tmnaassetscs/vcr/live/vehicle/TOY/2025/tundrahybrid/8401/434/00a9a37a0497a0701c5155cb78e6e7add03464a853b5a9a92eb6851d63fc9a84.png?wid=750&fmt=webp-alpha&cropN=0.07,0.16,0,0.8')"
+                  style="
+                    width: 83%;
+                    background-color: #e60000;
+                    color: #ffffff;
+                    padding: 10px 30px;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    font-family: Arial, sans-serif;
+                    font-size: 1em;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    transition: background-color 0.3s ease;
+                  "
+                  onmouseover="this.style.backgroundColor='#cc0000'"
+                  onmouseout="this.style.backgroundColor='#e60000'"
+                >
+                  CHOOSE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer">
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-column">
+              <h4>Shopping Tools <span class="arrow"></span></h4>
+              <ul class="footer-links">
+                <li>
+                  <a href="/pages/2_BaoPham/page1.html">Build & Price</a>
+                </li>
+                <li>
+                  <a href="/pages/2_BaoPham/page3.html">Search Inventory</a>
+                </li>
+                <li><a href="/pages/3_Nhat/find.html">Find a Dealer</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Vehicles <span class="arrow"></span></h4>
+              <ul class="footer-links">
+                <li>
+                  <a href="/pages/1_TienThinh/All_Vehicles.html"
+                    >All Toyota Vehicles</a
+                  >
+                </li>
+                <li>
+                  <a href="/pages/1_TienThinh/All_Vehicles.html">SUVs</a>
+                </li>
+                <li>
+                  <a href="/pages/1_TienThinh/All_Vehicles.html">Trucks</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Helpful Links <span class="arrow"></span></h4>
+              <ul class="footer-links">
+                <li><a href="#">tmt</a></li>
+                <li><a href="#">tmt</a></li>
+                <li><a href="#">tmt</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>About Toyota <span class="arrow"></span></h4>
+              <ul class="footer-links">
+                <li><a href="/pages/3_Nhat/history.html">History</a></li>
+                <li><a href="/pages/3_Nhat/contact.html">Contact</a></li>
+                <li><a href="/pages/4_SiDan/Newsroom.html">Newsroom</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-meta">
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+            <nav class="footer-legal-nav">
+              <ul>
+                <li><a href="/pages/3_Nhat/contact.html">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Legal Terms</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer-copyright">
+            <p>© 2024 Toyota Motor Sales, U.S.A., Inc. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      function chooseCar(name, image) {
+        localStorage.setItem("selectedCarName", name);
+        localStorage.setItem("selectedCarImage", image);
+        window.location.href = "page2.html";
+      }
+    </script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
